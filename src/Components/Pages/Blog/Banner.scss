@@ -1,0 +1,28 @@
+.BlogPage{
+    display: flex;
+    flex-direction: column;
+    .Banner-Blog-Background{
+        margin-top: 11%;
+        color: #fff;
+        background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 137px 2px 265px 12px;
+    h1{
+        @media(max-width:370px){
+            margin: 0;
+    font-size: 20px;
+
+        }
+    }
+    p{
+        @media(max-width: 370px) {margin: 0;
+    font-size: 13px;
+
+    }
+}
+    
+
+}
+}

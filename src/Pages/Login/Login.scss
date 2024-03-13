@@ -1,0 +1,43 @@
+.Login-Page{
+    display: flex;
+    flex-direction: column;
+    .Form-Login{
+        margin-top: 10%;
+        border: 1px solid red;
+        border-radius: 20px;
+        width: 62%;
+        .Inputs-Login{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 1%;
+    input{
+        padding: 8px 14px;
+        border-radius: 15px;
+        margin-bottom: 10%;
+    }
+    
+    
+    }
+@media(max-width: 410px){
+    width: 90%;
+}
+button{
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    padding: 10px 8px;
+    border-radius: 15px;
+    display: flex;
+    margin-left: 42%;
+    margin-bottom: 2%;
+    @media(max-width: 510px){
+        margin-left: 24%;
+    }
+}
+
+        }
+    
+
+    }

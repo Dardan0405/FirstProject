@@ -1,0 +1,51 @@
+.PopuP-Container{
+    position: absolute;
+    margin-top: 25%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    .PopUp-Background{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(255deg, black, transparent);
+        z-index: 100;
+        color: #fff;
+        padding-top: 6%;
+        .PopUp-Content{
+            position: fixed;
+    background: #fff;
+    color: #000;
+    width: max(300px, 48.5vw);
+    height: 510px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+        padding: 24px 24px;
+    }
+    button{
+        padding: 13px 42px;
+        border-radius: 25px;
+        background-color: aqua;
+        cursor: pointer;
+    }
+
+}
+@media(max-width: 330px){
+    padding-top: 35%;
+}
+        }
+    }
