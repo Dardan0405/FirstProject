@@ -1,6 +1,7 @@
 import "./PopUp.scss"
 import React from "react"
 import { useState } from "react"
+import { FormattedMessage } from "react-intl"
 
 
 const PopUp = () =>{

@@ -2,7 +2,8 @@ import React from "react";
 import {AbutusMegamenu}from "./Megamenus/data"
 import Img from "../../assets/img1.png"
 import { Link } from "react-router-dom";
-
+import SelectLanguage from "./SelectLanguage/SelectLanguage";
+import { FormattedMessage } from "react-intl";
 function Navbar () {
     return(
         <div className="Navbar">
@@ -13,7 +14,7 @@ function Navbar () {
            </Link>
             </div>
             <div className="Links-Navbar">
-            <a href="" className="AboutUs">Aboout Us
+            <Link to={"/AboutUs"} className="AboutUs">Aboout Us
             <div className="Megamu Aboutus">
           {AbutusMegamenu.map((props) =>{
             return(
@@ -24,14 +25,15 @@ function Navbar () {
             )
           })}
             </div>
-            </a>
-            <Link to={"/Contact"}>Contact Us</Link>
+            </Link>
+            <Link to={"/Contact"}><FormattedMessage id="Contact" defaultMessage="Contact Us"/></Link>
             <Link to={"/Blog"}>Blog</Link>
             </div>
             <div className="Login-Signup">
-            <Link to={"/Login"}>Login</Link>
-                <a href="">Signup</a>
+            <Link to={"/Login"}><FormattedMessage id="Login" defaultMessage="Login"/></Link>
+                <a href=""><FormattedMessage id="SignUp" defaultMessage="Signup"/></a>
             </div>
+            <SelectLanguage/>
            
         </div>
     )
